@@ -5,7 +5,7 @@
 }
 
 .content-wrap {
-    margin: 150px 945px;
+    margin-top: 150px;
 }
 
 .navbar .navbar-inner {
