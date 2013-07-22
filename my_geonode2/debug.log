@@ -1,0 +1,33 @@
+[22/Jul/2013 15:01:41] INFO [geonode.people.management:33] Notifications Configured for geonode.people.managment.commands
+[22/Jul/2013 15:01:41] INFO [geonode.layers.management:35] Notifications Configured for geonode.layers.managment.commands
+[22/Jul/2013 15:01:41] INFO [geonode.maps.management:35] Notifications Configured for geonode.maps.management.commands
+[22/Jul/2013 15:02:26] DEBUG [geonode.search.views:207] cached search results 84
+[22/Jul/2013 15:02:26] DEBUG [geonode.search.views:144] generated combined search results in 0.0185689926147, 9.53674316406e-07
+[22/Jul/2013 15:02:26] DEBUG [geonode.search.views:145] with 6 db queries
+[22/Jul/2013 15:02:36] DEBUG [geonode.search.views:207] cached search results 84
+[22/Jul/2013 15:02:36] DEBUG [geonode.search.views:144] generated combined search results in 0.0377869606018, 0.0
+[22/Jul/2013 15:02:36] DEBUG [geonode.search.views:145] with 5 db queries
+[22/Jul/2013 15:02:40] DEBUG [geonode.search.views:207] cached search results 84
+[22/Jul/2013 15:02:40] DEBUG [geonode.search.views:144] generated combined search results in 0.023402929306, 0.0
+[22/Jul/2013 15:02:40] DEBUG [geonode.search.views:145] with 5 db queries
+[22/Jul/2013 15:02:49] DEBUG [geonode.search.views:207] cached search results 84
+[22/Jul/2013 15:02:49] DEBUG [geonode.search.views:144] generated combined search results in 0.0191872119904, 9.53674316406e-07
+[22/Jul/2013 15:02:49] DEBUG [geonode.search.views:145] with 5 db queries
+[22/Jul/2013 15:02:52] DEBUG [geonode.search.views:207] cached search results 84
+[22/Jul/2013 15:02:52] DEBUG [geonode.search.views:144] generated combined search results in 0.0202078819275, 1.50203704834e-05
+[22/Jul/2013 15:02:52] DEBUG [geonode.search.views:145] with 4 db queries
+[22/Jul/2013 15:02:54] DEBUG [geonode.search.views:207] cached search results 84
+[22/Jul/2013 15:02:54] DEBUG [geonode.search.views:144] generated combined search results in 0.0145831108093, 0.0
+[22/Jul/2013 15:02:54] DEBUG [geonode.search.views:145] with 5 db queries
+[22/Jul/2013 15:02:56] DEBUG [geonode.search.views:207] cached search results 84
+[22/Jul/2013 15:02:56] DEBUG [geonode.search.views:144] generated combined search results in 0.019718170166, 1.38282775879e-05
+[22/Jul/2013 15:02:56] DEBUG [geonode.search.views:145] with 4 db queries
+[22/Jul/2013 15:02:57] DEBUG [geonode.search.views:207] cached search results 84
+[22/Jul/2013 15:02:57] DEBUG [geonode.search.views:144] generated combined search results in 0.0237069129944, 1.19209289551e-05
+[22/Jul/2013 15:02:57] DEBUG [geonode.search.views:145] with 5 db queries
+[22/Jul/2013 15:03:00] DEBUG [geonode.search.views:207] cached search results 84
+[22/Jul/2013 15:03:00] DEBUG [geonode.search.views:144] generated combined search results in 0.0501630306244, 9.53674316406e-07
+[22/Jul/2013 15:03:00] DEBUG [geonode.search.views:145] with 5 db queries
+[22/Jul/2013 15:03:02] DEBUG [geonode.search.views:207] cached search results 84
+[22/Jul/2013 15:03:02] DEBUG [geonode.search.views:144] generated combined search results in 0.0322649478912, 1.19209289551e-06
+[22/Jul/2013 15:03:02] DEBUG [geonode.search.views:145] with 5 db queries
