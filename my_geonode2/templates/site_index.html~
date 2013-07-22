@@ -21,8 +21,9 @@ This is where you can override the hero area block. You can simply modify the co
 Die Bilder wurden von <a href="http://www.climb-fp7.eu/home/home.php">hier</a> übernommen.
           {% endblocktrans %}
         </p>
+	<img src ="../static/img/kopf-cau-block.gif" alt="lol">
         <span>{% trans 'Need help' %} <a href="http://geonode.github.com/workshops/user">{% trans 'Getting Started?' %}</a></span>
-<img src ="../static/img/kopf-cau-block.gif" alt="lol">
+
       </div>
       <div class="btns">
         <a class="btn btn-large" href="{% url "layer_browse" %}">
