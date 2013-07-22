@@ -176,9 +176,6 @@ INSTALLED_APPS = (
     'geonode.search',
     'geonode.catalogue',
     'geonode.documents',
-
-    # new apps
-    'imagetest',
 )
 
 LOGGING = {
