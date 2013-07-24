@@ -12,4 +12,34 @@
     background: white;
 }
 
+body{
+line-height: 0px;
+}
+footer,
+
+footer.footer {
+  background: url(../img/wasser_lang.jpg)  no-repeat;
+  color: black;
+  font-size: 11px;
+  padding-top: 10px;
+  position:relative;
+  left: 0px;
+  bottom: 0px;
+  height: 182px;
+  width: 100%;
+}
+
+footer.footer a {
+color: blue;
+text-decoration: none;
+}
+
+.nav-box {
+background: #4d95c7;
+border-bottom: 0;
+margin-bottom: 0;
+padding: 1px 0;
+margin-left: -20px;
+margin-right: -20px;
+}
 

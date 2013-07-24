@@ -12,4 +12,30 @@
     background: white;
 }
 
+body{
+line-height: 0px;
+}
+footer,
+
+footer.footer {
+  background: url(../img/wasser_lang.jpg)  no-repeat;
+  color: black;
+  font-size: 11px;
+  padding-top: 10px;
+  position:relative;
+  left: 0px;
+  bottom: 0px;
+  height: 182px;
+  width: 100%;
+}
+
+footer.footer a {
+color: blue;
+text-decoration: none;
+}
+
+.nav-pills > .active > a:focus {
+  color: #ffffff;
+  background-color: blue;
+}
 
