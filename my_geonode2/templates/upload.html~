@@ -1,0 +1,19 @@
+<h1> Search csv </h1>
+<hr/>
+{% if entries %}
+<table>
+<tr>
+	<th><p align="center">Name</th>
+	<th><p align="center">Data</th>
+</tr>
+   {% for imagetest in entries %}
+	<tr><td>csv:  </td><td> {{imagetest.csv}}</td><tr> 
+	<tr><td>image:</td><td> {{imagetest.image}}</td><tr> 
+</table>
+<hr/>
+   {% endfor %}
+{% else %}
+<p>No data is available.</p>
+{% endif %}
+
+

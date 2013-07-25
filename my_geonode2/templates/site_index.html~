@@ -1,4 +1,4 @@
-{% extends 'index.html' %}
+
 {% load i18n %}
 {% load maps_tags %}
 {% load layers_tags %}
@@ -15,8 +15,7 @@ This is where you can override the hero area block. You can simply modify the co
       <div class="intro">
         <p>
           {% blocktrans %}
-	  Dies ist der erste Versuch eine Geonode css-Datei zu verändern.
-	  Hat leider nicht ganz geklappt... </p>
+	  Dies ist der erste Versuch eine Geonode css-Datei zu verändern. </p>
 	<p>
 Die Bilder wurden von <a href="http://www.climb-fp7.eu/home/home.php">hier</a> übernommen.
           {% endblocktrans %}

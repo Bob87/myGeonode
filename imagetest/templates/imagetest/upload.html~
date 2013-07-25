@@ -1,0 +1,22 @@
+{% extends "site_base.html" %}
+{% block middle %}
+<h1> Search csv </h1>
+<hr/>
+{% if entries %}
+<table>
+<tr>
+	<th><p align="center">Name</th>
+	<th><p align="center">Data</th>
+</tr>
+   {% for lol in entries %}
+	<tr><td>csv:  </td><td> {{lol.csv}}</td><tr> 
+	<tr><td>image:</td><td> {{lol.image}}</td><tr> 
+</table>
+<hr/>
+   {% endfor %}
+{% else %}
+<p>No data is available.</p>
+{% endif %}
+{% endblock middle %}
+
+
