@@ -1,22 +1,28 @@
 {% extends "site_base.html" %}
-{% block middle %}
+{% load i18n %}
+{% load url from future %}
+
+{% block title %}{% block title_sub %}{% trans "Explore Maps" %}{% endblock %} - {{ block.super }} {% endblock %}
+
+{% block body_class %}maps{% endblock %}
+
+{% block body_outer %}
+  <div class="span12">
 <h1> Search csv </h1>
 <hr/>
 {% if entries %}
-<table>
-<tr>
-	<th><p align="center">Name</th>
-	<th><p align="center">Data</th>
-</tr>
+ <ul>
    {% for lol in entries %}
-	<tr><td>csv:  </td><td> {{lol.csv}}</td><tr> 
-	<tr><td>image:</td><td> {{lol.image}}</td><tr> 
-</table>
-<hr/>
+	<li>csv:   {{lol.id}}  </li>
+ </ul>
    {% endfor %}
 {% else %}
 <p>No data is available.</p>
 {% endif %}
-{% endblock middle %}
+  {% block body %}{% endblock body %}
+  {% block sidebar %}{% endblock sidebar %}
+{% endblock %}
+
+
 
 
