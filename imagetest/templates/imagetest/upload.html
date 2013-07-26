@@ -20,6 +20,11 @@
 {% else %}
 <p>No data is available.</p>
 {% endif %}
+<form action="/imagetest/">{% csrf_token %}
+<ul>
+ {{form.as_ul}}
+</ul>
+</form>
   {% block body %}{% endblock body %}
   {% block sidebar %}{% endblock sidebar %}
 {% endblock %}

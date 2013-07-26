@@ -1,4 +1,4 @@
-{% extends "site_base.html" %}
+{% extends "base.html" %}
 {% load i18n %}
 {% load url from future %}
 
@@ -13,12 +13,18 @@
 {% if entries %}
  <ul>
    {% for lol in entries %}
-	<li>csv:   {{lol.id}}  </li>
- </ul>
+	<li>csv:   {{lol.csv}}  </li>
+	<li>image: {{lol.image}}</li> 
    {% endfor %}
+ </ul>
 {% else %}
 <p>No data is available.</p>
 {% endif %}
+<form action="/imagetest/">{% csrf_token %}
+<ul>
+ {{form.as_ul}}
+</ul>
+</form>
   {% block body %}{% endblock body %}
   {% block sidebar %}{% endblock sidebar %}
 {% endblock %}
