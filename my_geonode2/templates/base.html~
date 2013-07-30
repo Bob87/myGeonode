@@ -127,7 +127,11 @@
                   <li id="nav_search">
                     <a href="{% url "advanced_search" %}">{% trans "Search" %}</a>
                   </li>
-                  {% block extra-nav %}{% endblock %}
+                  {% block extra-nav %}
+		<li id="nav_test">
+		    <a href="/imagetest/">Upload images</a>
+		</li>
+		{% endblock %}
                 </ul>
               </nav>
             </div>
@@ -160,6 +164,12 @@
         <div class="container">
           <div class="row">
             {% block body_outer %}
+              <div class="span8">
+                {% block body %}{% endblock %}
+              </div>
+              <div class="span4">
+                {% block sidebar %}{% endblock %}
+              </div>
             {% endblock %}
           </div>
         </div>

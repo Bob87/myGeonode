@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "site_base.html" %}
 {% load i18n %}
 {% load url from future %}
 
@@ -20,9 +20,9 @@
 {% else %}
 <p>No data is available.</p>
 {% endif %}
-<form action="/imagetest/">{% csrf_token %}
+<form action="/imagetest/">
 <ul>
- {{form.as_ul}}
+ {{form.as_table}}
 </ul>
 </form>
   {% block body %}{% endblock body %}

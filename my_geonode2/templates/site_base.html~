@@ -1,10 +1,6 @@
-{% extends "site_index.html" %}
+{% extends "base.html" %}
 {% block extra_head %}
       <link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet"/>
 {% endblock %}
-{% block extra-nav %}
-<li id="nav_test">
-    <a href="/imagetest/">Upload images</a>
-</li>
-{% endblock %}
+
 
