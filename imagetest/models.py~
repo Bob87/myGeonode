@@ -1,6 +1,13 @@
 from django.db import models
+from imagetest.modelOutput import LAND_INDICATOR, HYDROLOGICAL_INDICATOR, TIME_HORIZON, HYDROLOGICAL_MODEL, CLIMATE_FORCING,CLIMATE_DATA_PROCESSING, SPATIAL_SCALES
 
 class Test(models.Model):
-    csv       = models.CharField(max_length=255)
-    image     = models.CharField(max_length=255)
+    csv = models.CharField(max_length=255)
+    image = models.CharField(max_length=255)
+    def __unicode__(self):
+        return self.csv
 
+class Test(models.Model):
+	land = models.ChoiceField(choices=LAND_INDICATOR)
+	def __unicode__(self):
+        	return self.land

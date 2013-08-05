@@ -8,15 +8,24 @@
 
 {% block body_outer %}
   <div class="span12">
-<h1> Search Image </h1>
+<h1> Search csv </h1>
 <hr/>
-
+{% if entries %}
+ <ul>
+   {% for lol in entries %}
+	<li>csv:   {{lol.csv}}  </li>
+	<li>image: {{lol.image}}</li> 
+   {% endfor %}
+ </ul>
+{% else %}
+<p>No data is available.</p>
 {% endif %}
-<form action="/imagetest/" method="post"> {% csrf_token %}
+<form action="/imagetest/">
 <ul>
  {{form.as_ul}}
 </ul>
 
+<h3> Output = {{output}} </h3>
 <input type="submit" value="Submit">
 </form>
   {% block body %}{% endblock body %}

@@ -17,19 +17,13 @@ from geonode.security.views import _perms_info
 
 @login_required
 def home(request):
-        if request.method == 'POST':
-		form = TestForm(request.POST)
+		form = TestForm(request.POST or None)
 		if form.is_valid():
 			cd = form.cleaned_data
 			land = cd['land']
-			hydro = cd['hydro']
-			timehorz = cd['timehorz']
-			hydromodel = cd['hydromodel']
-			climateforcing = cd['climateforcing']
-			climatedatapro = cd['climatedatapro']
-			spatialscales = cd['spatialscales']
-			#output = land
-			output = land+'_'+hydro+'_'+timehorz+'_'+hydromodel+'_'+climateforcing+'_'+climatedatapro+'_'+spatialscales+'.csv'
+			#hydro = cd['hydro']
+			output = land
+			#output = TestForm.get_land_display()
 			return render_to_response('imagetest/add.html',{'form': form, 'land':land,'hydro':hydro, 'output': output},context_instance=RequestContext(request))
 	else:
 			form=TestForm()

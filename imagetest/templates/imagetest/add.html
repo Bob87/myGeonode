@@ -11,12 +11,12 @@
 <h1> Search Image </h1>
 <hr/>
 
-{% endif %}
-<form action="/imagetest/" method="post"> {% csrf_token %}
+<form action="/imagetest/">
 <ul>
  {{form.as_ul}}
 </ul>
 
+<h3> Output = {{output}} </h3>
 <input type="submit" value="Submit">
 </form>
   {% block body %}{% endblock body %}
