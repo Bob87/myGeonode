@@ -1,9 +1,11 @@
+from my_geonode2 import settings
 from django.conf.urls import include, patterns, url
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
 from geonode.sitemap import LayerSitemap, MapSitemap
 from django.views.generic import TemplateView
+
 
 import geonode.proxy.urls
 

@@ -11,7 +11,8 @@
 <h1> Search Image </h1>
 <hr/>
 
-{% endif %}
+
+  {% block body %}
 <form action="/imagetest/" method="post"> {% csrf_token %}
 <ul>
  {{form.as_ul}}
@@ -19,8 +20,9 @@
 
 <input type="submit" value="Submit">
 </form>
-  {% block body %}{% endblock body %}
-  {% block sidebar %}{% endblock sidebar %}
+{% endblock body %}
+{% block sidebar %}
+{% endblock sidebar %}
 {% endblock %}
 
 

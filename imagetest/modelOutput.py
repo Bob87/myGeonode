@@ -40,11 +40,11 @@ CLIMATE_FORCING = (('ERC','ECHAM-5 RCA'),
 		('ERE','ECHAM-5 REMO'),
 		('HRC','HadCM3 RCA'))
 
-CLIMATE_DATA_PROCESSING = (('1','BDM'),
-		('2','BDB'),
-		('3','BOX'),
-		('4','NOX'),
-		('5','NDX'))
+CLIMATE_DATA_PROCESSING = (('BDM','BDM'),
+		('BDB','BDB'),
+		('BOX','BOX'),
+		('NOX','NOX'),
+		('NDX','NDX'))
 
 SPATIAL_SCALES = (('1KM','1000m'),
 		('500','500m'),

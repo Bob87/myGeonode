@@ -11,7 +11,12 @@
 <h1> Search Image </h1>
 <hr/>
 
-<form action="/imagetest/">
+
+{% block body %}
+<table>
+<tr>
+<td>
+<form action="/imagetest/">{% csrf_token %}
 <ul>
  {{form.as_ul}}
 </ul>
@@ -19,7 +24,13 @@
 <h3> Output = {{output}} </h3>
 <input type="submit" value="Submit">
 </form>
-  {% block body %}{% endblock body %}
+</td>
+<td>
+<img src ="{{ img.image.url }}" alt="lol"/>
+</td>
+</tr>
+</table>
+{% endblock body %}
   {% block sidebar %}{% endblock sidebar %}
 {% endblock %}
 

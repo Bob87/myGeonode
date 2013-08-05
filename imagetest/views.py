@@ -28,10 +28,11 @@ def home(request):
 			climateforcing = cd['climateforcing']
 			climatedatapro = cd['climatedatapro']
 			spatialscales = cd['spatialscales']
-			#output = land
 			output = land+'_'+hydro+'_'+timehorz+'_'+hydromodel+'_'+climateforcing+'_'+climatedatapro+'_'+spatialscales+'.csv'
-			return render_to_response('imagetest/add.html',{'form': form, 'land':land,'hydro':hydro, 'output': output},context_instance=RequestContext(request))
+			output2 = land+'_'+hydro+'_'+timehorz+'_'+hydromodel+'_'+climateforcing+'_'+climatedatapro+'_'+spatialscales+'.png'
+			img = Test.objects.get(csv=output)
+			return render_to_response('imagetest/add.html',{'form': form, 'land':land,'hydro':hydro, 'output': output, 'img':img},context_instance=RequestContext(request))
 	else:
 			form=TestForm()
         return render_to_response('imagetest/upload.html',{'form': form}, context_instance=RequestContext(request))
-	#return render_to_response('imagetest/upload.html', RequestContext(request,{'entries': entries,}))
+
