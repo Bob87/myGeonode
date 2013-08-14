@@ -13,6 +13,7 @@
 
 
 {% block body %}
+{% if output3 %}
 <table>
 <tr>
 <td>
@@ -21,8 +22,13 @@
  {{form.as_ul}}
 </ul>
 
-<h3> Output = {{output}} </h3>
-<input type="submit" value="Submit">
+<h3> Output  = {{output}} </h3>
+<h3> Output3 = {{output3}} </h3>
+<h3> Output4 = {{output4}} </h3>
+<h3> Output5 = {{output5}} </h3>
+<h3> Output6 = {{output6}} </h3>
+<h1> {{out}} </h1>
+<input type="submit" value="New ones">
 </form>
 </td>
 <td>
@@ -30,6 +36,51 @@
 </td>
 </tr>
 </table>
+
+
+{% elif output2 %}
+<table>
+<tr>
+<td>
+<form action="/imagetest/">{% csrf_token %}
+<ul>
+ {{form.as_ul}}
+</ul>
+
+<h3> Output  = {{output}} </h3>
+<h3> Output2 = {{output2}} </h3>
+<h1> {{out}} </h1>
+<input type="submit" value="New ones">
+</form>
+</td>
+<td>
+<img src ="{{ img2.image.url }}" alt="lol"/>
+</td>
+<td>
+<img src ="{{ img3.image.url }}" alt="lol"/>
+</td>
+</tr>
+</table>
+{% else %}
+<table>
+<tr>
+<td>
+<form action="/imagetest/">{% csrf_token %}
+<ul>
+ {{form.as_ul}}
+</ul>
+
+<h3> Output  = {{output}} </h3>
+<h1> {{out}} </h1>
+<input type="submit" value="New ones">
+</form>
+</td>
+<td>
+<img src ="{{ img.image.url }}" alt="lol"/>
+</td>
+</tr>
+</table>
+{% endif %}
 {% endblock body %}
   {% block sidebar %}{% endblock sidebar %}
 {% endblock %}

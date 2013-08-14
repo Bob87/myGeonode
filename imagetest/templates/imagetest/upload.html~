@@ -18,12 +18,10 @@
  {{form.as_ul}}
 </ul>
 
-<input type="submit" value="Submit">
+<input type="submit" value="New">
 </form>
 {% endblock body %}
-  {% block sidebar %}
-<li><img src ="{{ img.image.url }}" alt="lol"/></li>
-<img src ="../static/img/kopf-cau-block.gif" alt="lol">
+{% block sidebar %}
 {% endblock sidebar %}
 {% endblock %}
 
