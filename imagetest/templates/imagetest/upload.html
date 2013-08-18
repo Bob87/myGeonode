@@ -1,26 +1,26 @@
 {% extends "site_base.html" %}
 {% load i18n %}
 {% load url from future %}
+{% load bootstrap_tags %}
 
-{% block title %}{% block title_sub %}{% trans "Explore Maps" %}{% endblock %} - {{ block.super }} {% endblock %}
+{% block title %}{% block title_sub %}{% trans "Explore Maps" %}{%endblock %} - {{ block.super }} {% endblock %}
 
 {% block body_class %}maps{% endblock %}
 
 {% block body_outer %}
-  <div class="span12">
-<h1> Search Image </h1>
-<hr/>
 
 
-  {% block body %}
-<form action="/imagetest/" method="post"> {% csrf_token %}
-<ul>
- {{form.as_ul}}
-</ul>
+<form class="form-horizontal" method="POST" action="/imagetest/">{%csrf_token %}
+    <legend>
+{% blocktrans %} Choose the details for the timeseries you want to download {% endblocktrans %}
+    </legend>
+<div class="form-controls">
+      {{ form|as_bootstrap }}
+    </div>
 
-<input type="submit" value="Submit">
+<input type="submit" value="new" class="btn btn-mini">
 </form>
-{% endblock body %}
+
 {% block sidebar %}
 {% endblock sidebar %}
 {% endblock %}
